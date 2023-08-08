@@ -1,0 +1,19 @@
+.mainContainer {
+  width: 97%;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 5px 10px 5px 10px var(--grey3);
+  border-radius: 30px;
+  margin: 30px 10px 0px 10px;
+  .chartBox {
+    width: 48%;
+    height: 400px;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px solid var(--grey3);
+  }
+}

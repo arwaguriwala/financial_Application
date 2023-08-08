@@ -1,0 +1,31 @@
+.sidebarContainer {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 5px 0px var(--grey3);
+  .logo {
+    width: 100%;
+    margin: auto;
+  }
+  .navbarContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .sidebarContentStyle {
+      color: black;
+      text-align: center;
+      padding: 8px 0px 8px 0px;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      text-align: left;
+      padding-left: 20px;
+      cursor: pointer;
+      .customClassIcon {
+        margin-left: 2px;
+      }
+    }
+  }
+}

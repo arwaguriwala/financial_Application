@@ -1,0 +1,33 @@
+.headerContainer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0px;
+  .leftSideContainer {
+    width: 30%;
+    display: flex;
+    .title {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 22px;
+      font-weight: var(--font-semibold);
+    }
+  }
+
+  .headerIconContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .notifyIcon {
+      width: 30px;
+      margin-right: 3%;
+    }
+    .databaseIcon {
+      width: 25px;
+      margin-right: 3%;
+    }
+  }
+}
