@@ -22,7 +22,6 @@ const RootRoutes: FC = () => {
             <MainLayout>
               <Routes>
                 {navBarData.map((item, index) => {
-                  console.log("item", item);
                   return (
                     <Route
                       key={index}

@@ -1,17 +1,21 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import styles from "./dashboard.module.scss";
-import PieChart from "../../core/charts/pie-chart/PieChart";
+import { chartData } from "../../constants/data";
 
-interface IDashboard {}
-
-const Dashboard: FC<IDashboard> = () => {
+const Dashboard: FC = () => {
   return (
     <>
       <div className={styles.mainContainer}>
-        <div className={styles.chartBox}>
-          <PieChart />
-        </div>
-        <div className={styles.chartBox}>bar chart</div>
+        {chartData?.map((item: any) => {
+          return (
+            <React.Fragment key={item?.id}>
+              <div className={styles.chartBoxContainer}>
+                <p className={styles.chartTitle}>{item?.title}</p>
+                <div className={styles.chartBox}>{<item.element />}</div>
+              </div>
+            </React.Fragment>
+          );
+        })}
       </div>
     </>
   );

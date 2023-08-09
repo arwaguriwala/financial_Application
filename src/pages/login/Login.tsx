@@ -21,7 +21,6 @@ const Login: FC = () => {
     data.role = userRole;
     const formData = JSON.stringify(data);
     localStorage.setItem("formData", formData);
-    console.log("data", formData);
     navigate("dashboard");
   };
   return (

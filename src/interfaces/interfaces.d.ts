@@ -5,3 +5,9 @@ export interface ILoginForm {
   [EMAIL]: string;
   [PASSWORD]: string;
 }
+
+export interface IBarChartState {
+  isLoading: boolean;
+  employeeData: [];
+  error: string | null;
+}
