@@ -9,5 +9,6 @@ export interface ILoginForm {
 export interface IBarChartState {
   isLoading: boolean;
   employeeData: [];
+  userData: [];
   error: string | null;
 }

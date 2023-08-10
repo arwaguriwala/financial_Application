@@ -1,0 +1,25 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  .selectionContainer {
+    width: 90%;
+    height: 90px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    .userSelectionContainer {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      .title {
+        font-size: 16px;
+        font-weight: 500;
+        padding-right: 10px;
+      }
+    }
+    .addButtonStyle {
+      width: 60px !important;
+      margin: 0px !important;
+    }
+  }
+}

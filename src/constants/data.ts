@@ -1,11 +1,15 @@
 import BarChart from "../core/charts/bar-chart/BarChart";
-// import DonutChart from "../core/charts/donut-chart/DonutChart";
+import DonutChart from "../core/charts/donut-chart/DonutChart";
+import EventChart from "../core/charts/event-chart/EventChart";
 import LineChart from "../core/charts/line-chart/LineChart";
+import MultipleLineChart from "../core/charts/multiple-lineChart/MultipleLineChart";
 
 export const chartData = [
   { id: 1, title: "Bar chart", element: BarChart },
   { id: 2, title: "Line chart", element: LineChart },
-  // { id: 3, title: "Donut chart", element: DonutChart },
+  { id: 3, title: "Event chart", element: EventChart },
+  { id: 4, title: "Donut chart", element: DonutChart },
+  { id: 5, title: "chart", element: MultipleLineChart },
 ];
 
 // barChartData
@@ -71,9 +75,9 @@ export const lineChartData = {
       },
     },
 
-    fill: {
-      colors: ["#2E93fA", "#66DA26", "#546E7A"],
-    },
+    // fill: {
+    //   colors: ["#2E93fA", "#66DA26", "#546E7A"],
+    // },
 
     yaxis: {
       reversed: false,
